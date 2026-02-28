@@ -2,9 +2,9 @@
 import { useEffect, useRef } from 'react';
 
 export default function Home() {
-  const ponteiroHora = useRef(null);
-  const ponteiroMinuto = useRef(null);
-  const ponteiroSegundo = useRef(null);
+  const ponteiroHora = useRef<HTMLDivElement>(null);
+  const ponteiroMinuto = useRef<HTMLDivElement>(null);
+  const ponteiroSegundo = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function relogio() {
