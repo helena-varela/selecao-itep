@@ -27,7 +27,9 @@ export default function Home() {
       }
     }
 
+    const interval = setInterval(relogio, 1000);
     relogio();
+    return () => clearInterval(interval);
 
   }, []);
 
